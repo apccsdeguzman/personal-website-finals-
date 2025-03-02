@@ -3,48 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profile</title>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
-        header { background: #333; color: white; padding: 15px; }
-        nav a { margin: 0 15px; color: white; text-decoration: none; }
-        section { padding: 20px; }
-        footer { background: #333; color: white; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            color: white;
+            padding: 15px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .introduction, .key-skills {
+            text-align: center;
+            padding: 50px;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            width: 250px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Website</h1>
+        <div class="logo"> 
+            <img src="https://apc.edu20.org/files/22095/Asia_Pacific_College_Logo(2).png?lmsauth=7dc65e3ec98d480e996b6f9108ffe7ed895b28fb" alt="Logo"> 
+            <h1>Personal Website</h1>
+        </div>
         <nav>
-            <a href="#about">About Me</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+            </ul>
         </nav>
     </header>
     
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! My name is Charlemagne, but you can call me Cha! I love discovering new things and learning from them.</p>
+    <section class="introduction">
+        <h2>Who is Charlemagne?</h2>
+        <p>A journey of passion and professional excellence.</p>
+        <p>Hello! My name is Charlemagne, but you can call me Cha! I am passionate about discovering new things and learning from it.</p>
+        <div class="cards">
+            <div class="card">
+                <img src="blob:https://www.messenger.com/3027387e-a837-42db-b111-1bf69c54ccea" alt="Education">
+                <h3>Education / Achievements</h3>
+                <p>Elementary - Pateros Catholic School
+                    Senior High School - HUMSS Strand - Pateros Catholic School</p>
+            </div>
+            <div class="card">
+                <img src="https://i.ytimg.com/vi/DhrL5xhnsrQ/maxresdefault.jpg" alt="Course">
+                <h3>Course</h3>
+                <p>I am currently pursuing BSIT-MI which focuses on optimizing technology.</p>
+            </div>
+            <div class="card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.kp63SsmX_-xRcNch9UDHrgHaHa&pid=Api&P=0&h=220" alt="IT Experience">
+                <h3>IT Experience</h3>
+                <p>Learned programming languages like Python and Java mostly on Code Combat and on my past subjects. </p>
+            </div>
+        </div>
     </section>
     
-    <section id="education">
-        <h2>Education</h2>
-        <p>BSIT-MI, focusing on optimizing technology.</p>
+    <section class="key-skills">
+        <h2>My Key Skills</h2>
+        <p>Explore the fields that define my skills.</p>
+        <div class="cards">
+            <div class="card">
+                <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t1.15752-9/476958926_3458953824240054_6381057562345777892_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGvAEHg9XsjwbDIHudT_zMm80qTK8Pnra7zSpMrw-etrlcUAEiV0oto6qgfWJ6SNFnLfajgg8IuwwHrUdpvShLc&_nc_ohc=VKQLNj2TDtAQ7kNvgEzPP-b&_nc_oc=AdgQcUiE8IFfhVNMIrjSmohvCPLgJDTiTe2Tm0TfeYn9L1fGS8id4igtjovvt9Ow2xE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl3-4.fna&oh=03_Q7cD1gHRVeaqLpyswkWr0odjhVk8NrCMfmfrJsYblDJM8ZTBzQ&oe=67E94BD6" alt="Hobbies & Interests">
+                <h3>Hobbies & Interests</h3>
+                <p>In my free time, I like to take time to meditate, explore makeup, and cook for the people that I love. I enjoy taking time to relax and recharge.</p>
+            </div>
+            <div class="card">
+                <img src="blob:https://www.messenger.com/a6ad05ff-ab05-4d85-8eab-9182ca3b68fc" alt="Goals in Life">
+                <h3>Goals in Life / Dream</h3>
+                <p>My ultimate goal is to provide for my family and repay them for all their hard work and sacrifices.</p>
+            </div>
+        </div>
     </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Proficient in Python and Java, experienced in IT security.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:nabicruz2314@gmail.com">nabicruz2314@gmail.com</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 - Personal Profile</p>
-    </footer>
 </body>
 </html>
