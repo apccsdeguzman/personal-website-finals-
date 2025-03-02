@@ -1142,7 +1142,9 @@
         .wix-ads,
         .wix-banner,
         #wixBadges,
-        [data-testid="banner"] {
+        [data-testid="banner"],
+        .wixui-rich-text,
+        .site-footer {
             display: none !important;
             visibility: hidden !important;
         }
@@ -1154,17 +1156,12 @@
     <script>
         // Remove Wix branding dynamically using JavaScript
         document.addEventListener("DOMContentLoaded", function() {
-            let elements = document.querySelectorAll(".wix-ads, .wix-banner, #wixBadges, [data-testid='banner']");
+            let elements = document.querySelectorAll(
+                ".wix-ads, .wix-banner, #wixBadges, [data-testid='banner'], .wixui-rich-text, .site-footer"
+            );
             elements.forEach(el => el.remove());
         });
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
 </body></html>
