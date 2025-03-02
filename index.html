@@ -68,16 +68,7 @@ window.$S={};$S.app_instances=[];$S.nav=[{"name":"\/0","uid":"60601167-1ff5-beab
     var host = $S && $S.global_conf && $S.global_conf.host_suffix ||
       $S && $S.globalConf && $S.globalConf.host_suffix || '';
   
-    if (hostName && hostName.includes('.strikingly.com')) {
-      trackDomain = '.strikingly.com';
-    } else if (hostName && hostName.includes('.sxl.cn')) {
-      trackDomain = '.sxl.cn';
-    } else if ($S && $S.live_site || $S && $S.liveBlog) {
-      trackDomain = hostName;
-    } else if (host) {
-      trackDomain = "." + host;
-    } else {
-      trackDomain = location.href && location.href.includes('strikingly') ? '.strikingly.com' : '.sxl.cn';
+  
     }
     return trackDomain;
   }
@@ -295,33 +286,7 @@ window.$S={};$S.app_instances=[];$S.nav=[{"name":"\/0","uid":"60601167-1ff5-beab
   "description": "i need to create a website describing myself"
 }
 
-</script>
-<meta content="website" property="og:type">
-<meta content="Personal Website on Strikingly" property="og:title">
-<meta content="https://sapphire-antelope-ng547s.mystrikingly.com/" property="og:url">
-<meta content="https://static-assets.strikinglycdn.com/images/fb_images/default.png" property="og:image">
-<meta content="Personal Website" property="og:site_name">
-<meta content="i need to create a website describing myself" property="og:description">
-<meta content="Personal Website" itemprop="name">
-<meta content="i need to create a website describing myself" itemprop="description">
-<meta content="https://static-assets.strikinglycdn.com/images/fb_images/default.png" itemprop="image">
-<meta content="summary_large_image" name="twitter:card">
-<meta content="Personal Website on Strikingly" name="twitter:title">
-<meta content="i need to create a website describing myself" name="twitter:description">
-<meta content="https://static-assets.strikinglycdn.com/images/fb_images/default.png" name="twitter:image">
-<meta content="i need to create a website describing myself" name="description">
-<meta name="strikingly-host-suffix" content="strikingly.com">
-<meta name="support-helper" content="{&quot;permalink&quot;:&quot;sapphire-antelope-ng547s&quot;,&quot;id&quot;:29956894}">
-<link href="https://static-assets.strikinglycdn.com/images/favicon.ico" rel="apple-touch-icon" sizes="58x58">
-<link href="https://static-assets.strikinglycdn.com/images/favicon.ico" rel="apple-touch-icon" sizes="76x76">
-<link href="https://static-assets.strikinglycdn.com/images/favicon.ico" rel="apple-touch-icon" sizes="80x80">
-<link href="https://static-assets.strikinglycdn.com/images/favicon.ico" rel="apple-touch-icon" sizes="87x87">
-<link href="https://static-assets.strikinglycdn.com/images/favicon.ico" rel="apple-touch-icon" sizes="114x114">
-<link href="https://static-assets.strikinglycdn.com/images/favicon.ico" rel="apple-touch-icon" sizes="120x120">
-<link href="https://static-assets.strikinglycdn.com/images/favicon.ico" rel="apple-touch-icon" sizes="152x152">
-<link href="https://static-assets.strikinglycdn.com/images/favicon.ico" rel="apple-touch-icon" sizes="167x167">
-<link href="https://static-assets.strikinglycdn.com/images/favicon.ico" rel="apple-touch-icon" sizes="180x180">
-<link rel="canonical" href="https://sapphire-antelope-ng547s.mystrikingly.com/">
+
 <script>
   if (!window.utils) window.utils = {}
   window.utils.getCookieByName = (name) => {
