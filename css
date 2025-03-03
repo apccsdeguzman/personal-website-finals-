@@ -1,0 +1,5 @@
+<style>
+  div[id*="WIX_ADS"], div[class*="wix"] {
+    display: none !important;
+  }
+</style>
