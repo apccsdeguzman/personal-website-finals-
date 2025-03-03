@@ -1,7 +1,0 @@
-.s-footer-logo-wrapper, 
-.s-footer-logo-tooltip, 
-.s-footer-logo-pbs {
-    display: none !important;
-    visibility: hidden !important;
-}
-
